@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>PeshiApp</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet"> 
+      <link href="css/style.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/slidebars.min.css">
+      <link rel="stylesheet" href="css/sidebar.css">
+      <link href="css/bootstrap-custom.css" rel="stylesheet"> 
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+   </head>
+   <body id="findPerson">
+      <div id="page">
+         <!-- navbar -->
+         <nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
+            <!-- Left Control -->
+            <div class="sb-toggle-left navbar-left">
+               <img src="img/Icon_Menu1x.png" class="img-responsive text-center" alt="ndtv" style="width:25px;height:15px;margin-top:2px;"/>
+            </div>
+            <!-- /.sb-control-left -->
+            <div class="container">
+               <!-- Logo --> 
+               <div  class="navbar-left">
+                  <a href="#" style="text-decoration:none;color:#fff;">
+                     <h3 style="margin-top:10px;margin-left:5%;">Tags</h3>
+                  </a> 
+               </div>
+               <!-- /#logo -->
+               <form class="searchbox" style="position:absolute;top:0;right:0;">
+                  <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                  <img src="img/Icon_Search1x.png" class="searchbox-icon" alt="search"/>
+               </form>
+            </div>
+         </nav> 
+         <div class="sb-slidebar sb-left sb-active">
+            <nav class="siden" style="background-color:none">
+               <ul class="sb-menu">
+                  <li class="sb-close"><a href="regular_news.html"><img src="img/Icon_Regularnews1x.png" alt="RegularNews"/>Regular News</a></li>
+                  <li class="sb-close"><a href="news.html"><img src="img/Icon_Tags1x.png" alt="RegularNews"/>Tags</a></li>
+                  <li class="sb-close"><a href="find_a_person.html"><img src="img/Icon_Bookmarks1x.png" alt="RegularNews"/>Bookmarks</a></li>
+                  <li class="sb-close"><a href="find_a_person.html"><img src="img/Icon_Menu11x.png" alt="RegularNews"/>Menu1</a></li>
+                  <li class="sb-close"><a href="#"><img src="img/Icon_Menu21x.png" alt="RegularNews"/>Menu2</a></li>
+                  <li class="sb-close"><a href="#"><img src="img/Icon_Menu31x.png" alt="RegularNews"/>Menu3</a></li>
+                  <li class="sb-close"><a href="#"><img src="img/Icon_Profile1x.png" alt="RegularNews"/>Profile</a></li>
+                  <li class="sb-close"><a href="#"><img src="img/Icon_Menu51x.png" alt="RegularNews"/>Menu5</a></li>
+                  <li class="sb-close"><a href="#"><img src="img/Icon_Settings1x.png" alt="RegularNews"/>Settings</a></li>
+               </ul>
+               <div class="logout"> 
+                  <ul class="list-inline">
+                     <li><a href="index.html">Log Out<br/><span style="font-size:12px;color:#ccc;">Suruja Mahuri</span></a></li>
+                     <li><a href="index.html"><img src="img/Pic1x.png" alt="RegularNews" style="width:40px;height:40px;"/></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div> 
+         <div id="sb-site">
+            <!-- zone --> 
+            <div id="zone" style="margin-top:0px;">
+               <div class="container">
+                  <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                     <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4" style="text-align:center">
+                        <a data-toggle="tab" href="#source" class="text-center active">
+                           <div class="cadre current">
+                              Source
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4" style="text-align:center">
+                        <a data-toggle="tab" href="#zoner" class="text-center">
+                           <div class="cadre">
+                              Zone
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4" style="text-align:center">
+                        <a data-toggle="tab" href="#department" class="text-center">
+                           <div class="cadre">
+                              Department
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="tab-content">
+               <!-- content -->  
+               <div id="source" class="tab-pane fade in active">
+                  <div class="content">
+                     <div class="container">
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 ">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 ">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="zoner" class="tab-pane fade in">
+                  <div class="content">
+                     <div class="container">
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="department" class="tab-pane fade in">
+                  <div class="content">
+                     <div class="container">
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                              <div class="categoryn text-center">
+                                 <img src="img/ndtv_logo.png" class="img-responsive text-center" alt="ndtv"/>
+                                 <a href="#">
+                                    <h3 class="follow">Follow</h3>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="http://plugins.adchsm.me/slidebars/scripts/slidebars/slidebars.min.js"></script>
+      <script src="js/search.js"></script>
+      <script type="text/javascript">
+         (function($) {
+           $(document).ready(function() {
+             // Initiate Slidebars
+             $.slidebars();
+           });
+         }) (jQuery);
+      </script>
+      <script>
+         (function($) {
+           $(document).ready(function() {
+             $('a[href^="#"]').on('touchend click', function(e) {
+               e.preventDefault();
+               var id = $(this).attr("href");
+               var offset = 70;
+               var target = $(id).offset().top - offset;
+               
+               $('html, body').animate({scrollTop:target}, 500);
+             });
+           });
+         }) (jQuery);
+      </script>
+      <script type="text/javascript">
+         $(".cadre").click(function(){
+             $(".current").css("border","none");
+             $(".cadre").css("border","none");
+             $(this).css("border","1px solid #fff");
+         });
+      </script>
+      <script>
+         $('.follow').on('click', function (e) {
+         $(this).text($(this).text() == 'Follow' ? 'Following' : 'Follow');
+         $(this).toggleClass("fol");
+         });
+      </script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+           var submitIcon = $('.searchbox-icon');
+           var inputBox = $('.searchbox-input');
+           var searchBox = $('.searchbox');
+           var isOpen = false;
+           submitIcon.click(function(){
+               if(isOpen == false){
+                   searchBox.addClass('searchbox-open');
+                   inputBox.focus();
+                   isOpen = true;
+               } else {
+                   searchBox.removeClass('searchbox-open');
+                   inputBox.focusout(); 
+                   isOpen = false;
+               }
+           });  
+            submitIcon.mouseup(function(){
+                   return false;
+               });
+           searchBox.mouseup(function(){
+                   return false;
+               });
+           $(document).mouseup(function(){
+                   if(isOpen == true){
+                       $('.searchbox-icon').css('display','block');
+                       submitIcon.click();
+                   }
+               });
+         });
+           function buttonUp(){
+               var inputVal = $('.searchbox-input').val();
+               inputVal = $.trim(inputVal).length;
+               if( inputVal !== 0){
+                   $('.searchbox-icon').css('display','block');
+               } else {
+                   $('.searchbox-input').val('');
+                   $('.searchbox-icon').css('display','block');
+               }
+           }
+      </script> 
+   </body>
+</html>
